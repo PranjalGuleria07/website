@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0ea;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: rgb(8, 8, 8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            height:40%;
+            color:rgb(250, 246, 246);
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        input {
+            width: 80%;
+            height:100%;
+            padding: 10px;
+            margin: 15px 8px;
+            box-sizing: border-box;
+
+        }
+
+        button {
+            background-color: rgb(255,202,8);
+            color: rgb(13, 15, 3);
+            padding: 10px 30px;
+            font-weight: bold;
+            margin:40px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+         
+    </style>
+   
+</head>
+<body background="C:\Users\Anmol\Downloads\event booking.webp">
+<div class="login-container">
+    <a href="Login" href="file:///C:/Users/Anmol/Downloads/Main.html"></a>
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="validateLogin()"><a href="C:\Users\Anmol\Downloads\Main.html">Login</a></button>
+    </form>
+</div>
+
+<script>
+    function validateLogin() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Perform some basic validation
+        if (username === "" || password === "") {
+            alert("Please enter both username and password.");
+            return;
+        }
+
+        // For a real application, you would perform server-side authentication here.
+        // This is just a simple example.
+        alert("Login successful!");
+    }
+</script>
+
+</body>
+</html>

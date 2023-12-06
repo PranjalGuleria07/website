@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management and Ticket  Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      padding-bottom: 30%;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color:rgb(13,15,3);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px #fff;
+      color:rgb(255,202,8);
+      padding-bottom: 30px;
+    }
+
+    form {
+      display: grid;
+      grid-gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin-top: 30px;
+      width:50%;
+      transform: translateX(50%);
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body background="C:\Users\Anmol\Downloads\page image.jpg"></body>
+<body>
+  <div class="container">
+    <h2>Event Ticket Booking</h2>
+    <form id="bookingForm">
+    
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="ticketType">Ticket Type:</label>
+      <select id="ticketType" name="ticketType" required>
+        <option value="general">General Admission</option>
+        <option value="vip">VIP</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+
+      <button type="button" onclick="submitForm()"><a href="C:\Users\Anmol\Desktop\anmol project\Main.html">Book Now</a></button>
+    </form>
+  </div>
+
+  <script>
+    function submitForm() {
+      // You can add AJAX code here to send form data to the server
+      alert('Booking successful!'); // For demo purposes, show an alert
+    }
+  </script>
+</body>
+</html>
